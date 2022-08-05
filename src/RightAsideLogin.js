@@ -7,8 +7,9 @@ const RightAside = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     
-    const handleSubmit = () =>{
-        console.log(email, password)
+    const handleSubmit = (e) =>{
+        e.preventDefault()
+        /*console.log(email, password)*/
     }
 
     return ( 

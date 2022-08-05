@@ -8,17 +8,27 @@ const RightAsideCadastro = () => {
     const [pass1, setPass1] = useState('')
     const [pass2, setPass2] = useState('')
 
+    
+    const handleSubmit = (e) =>{
+        e.preventDefault()
+       /*console.log(nomeDeUsuario,email, pass1, pass2)*/
+        if(pass1 !== pass2){
+            alert("Erro: as palavras passes são diferentes")
+        }
+    }
+
     return (
 
         <section>
             <p className='p-tittle'>Criar conta</p>
-            <form >
+            <form onSubmit={handleSubmit} >
                 <input
                     type="text"
                     placeholder='Nome de usuário'
                     value={nomeDeUsuario}
                     onChange={(e) => {setNomeDeUsuario(e.target.value)}}
                     className="input-style input-1"
+                    required
                 />
 
                 <input
@@ -27,6 +37,8 @@ const RightAsideCadastro = () => {
                     value={email}
                     onChange= {(e) =>{setEmail(e.target.value)}} 
                     className="input-style input-2"
+                    required
+
 
                />
 
@@ -36,6 +48,7 @@ const RightAsideCadastro = () => {
                     value={pass1}
                     onChange= {(e) => {setPass1(e.target.value)}}
                     className="input-style input-3"
+                    required
                     
                 />
 
@@ -45,6 +58,7 @@ const RightAsideCadastro = () => {
                     value={pass2}
                     onChange={(e) => {setPass2(e.target.value)}}
                     className="input-style input-4"
+                    required
 
                />
                 
