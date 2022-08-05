@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import React from "react";
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css';
 import Login from './Login';
 import './css/normalize/normalize.css'
@@ -8,21 +8,25 @@ import Cadastro from './Cadastro';
 function App() {
   return (
 
-    <Router>
+    <BrowserRouter>
       <div className="App">
+     
+          <Routes>
 
-        <Switch>
-          <Route exact path="/login">
-            <Login />
-          </Route>
+            <Route 
+             path={"/login"} 
+             element={<Login/>} 
+             />
 
-          <Route exact path="/">
-            <Cadastro />
-          </Route>
+            <Route 
+             path={"/"} 
+             element={<Cadastro />} 
+            />
 
-        </Switch>
-      </div>
-    </Router>
+          </Routes>
+
+        </div>
+    </BrowserRouter>
 
 
   );

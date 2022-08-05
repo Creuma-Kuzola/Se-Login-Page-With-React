@@ -48,7 +48,7 @@ body {
 
 .p-tittle{
   font-size: 2.8rem;
-  margin-top: 25vh;
+  margin-top: vh;
   font-family: "Noto Serif";
   padding-left: 9vw;
   transform: translateX(-5vw);
@@ -88,7 +88,7 @@ body {
 }
 
 
-.btn-submit{
+.btn-login, .btn-cadastro{
   border: none;
   background:none;
   font-size: 2rem;
@@ -101,7 +101,7 @@ body {
   cursor: pointer;
 }
 
-.btn-submit:hover{
+.btn-login:hover, .btn-cadastro:hover{
   background: linear-gradient(90deg, #BE065F -4.96%, #E07818 76.38%);
   font-weight: bold;
 }
@@ -109,4 +109,16 @@ body {
 .p-ainda{
   font-size: 1.45rem;
   color: #000;
+}
+
+.link-p{
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.link-p:hover{
+
+  color: #F50679;
+
 }

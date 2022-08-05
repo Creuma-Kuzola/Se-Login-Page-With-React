@@ -48,8 +48,8 @@ const RightAsideCadastro = () => {
 
                />
                 
-                <button className='btn-submit'>Criar minha conta</button>
-                <p className='p-ainda'>Já tem uma conta? <Link to="/login" >Faça Login </Link> </p>
+                <button className='btn-cadastro'>Criar minha conta</button>
+                <p className='p-ainda'>Já tem uma conta? <Link className='link-p' to="/login" >Faça Login! </Link> </p>
 
             </form>
         </section>

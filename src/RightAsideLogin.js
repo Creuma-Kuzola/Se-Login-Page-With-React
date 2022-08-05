@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
+import './right-aside-cadastro.css'
 
 const RightAside = () => {
 
@@ -35,8 +36,8 @@ const RightAside = () => {
                  />
 
                 <p className="p-esqueceu">Esqueceu a palavra-passe?</p>
-                <button className="btn-submit">Login</button>
-                <p className="p-ainda">Ainda não tem uma conta? <Link to="/"> Cadastre-se! </Link></p>
+                <button className="btn-login">Login</button>
+                <p className="p-ainda">Ainda não tem uma conta? <Link to="/" className='link-p'> Cadastre-se! </Link></p>
             </form>
         </section>
      );

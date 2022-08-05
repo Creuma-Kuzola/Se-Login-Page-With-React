@@ -1,0 +1,17 @@
+  .p-tittle{
+    font-size: 2.8rem;
+    margin-top: 18vh;
+    font-family: "Noto Serif";
+    padding-left: 9vw;
+    transform: translateX(-5vw);
+  }
+
+  .btn-cadastro{
+    margin-top: 5vh;
+  }
+  
+
+  .p-ainda{
+    font-size: 1.45rem;
+    color: #000;
+  }
